@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code {
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+    <title>Git and Github</title>
+</head>
+<body>
+    <div>
+        <h1>Git</h1>
+        <p>Git is a version control system that allows managing source code history efficiently. It can also be downloaded to your computer.</p>
+
+        <p>Git runs in the terminal or the Command Prompt only. Every Git commit has their own ID, the author, the date and the Commit message. “HEAD” just points to the latest Commit.</p>
+
+        <h2>Commands</h2>
+
+        <code>git init</code>
+        <p>Will turn our project into a project managed by Git.</p>
+
+        <code>git status</code>
+        <p>Provides information about the current state.</p>
+
+        <code>git add .</code>
+        <p>will track changes in all files inside the Repository.</p>
+
+        <code>git commit -m</code>
+        <p>Adds the latest version of the code to our Branch, -m should provide a meaningful Commit message.</p>
+
+        <code>git branch</code>
+        <p>Lists all Branches in our Repository.</p>
+
+        <code>git log</code>
+        <p>Will display all Commits inside the Branch.</p>
+
+        <code>git checkout</code>
+        <p>Allows to select a specific Branch or a specific Commit.</p>
+
+        <code>git master</code>
+        <p>Takes you back to the master branch.</p>
+
+        <code>git reset --hard ID</code>
+        <p>ID should be the ID of the commit you want. Deletes all later commits.</p>
+
+        <code>git checkout -- .</code>
+        <p>Lets you jump back to the last commit.</p>
+
+        <code>git  checkout -b</code>
+        <p>Creates a new Branch based on the latest Commit of the Branch you’re currently working in.</p>
+
+        <code>git checkout -b new-feature</code>
+        <p>Will create that new Branch named “new-feature”.</p>
+
+        <code>git merge branch-name</code>
+        <p>Merges branches.</p>
+
+        <code>git branch -D branch-name</code>
+        <p>Deletes branch.</p>
+
+    </div>
+    <hr>
+    <div>
+        <h1>Github</h1>
+
+        <p>Github is a hosting and collaboration provider which hosts Git projects. Code is stored in repositories, which can be made public. Inside a repository are branches or “subfolders” where the code is actually stored.</p>
+
+        <p>A repository can have many branches. A branch contains different versions of code, commits. Each commit is a snapshot of a specific version of the code. 
+        </p>
+        <p>The “Clone or download” option in the remote Repository provides a URL that can be shared to give others users Repository access.
+        </p>
+
+        <h2>Commands</h2>
+
+        <code>git remote add origin URL</code>
+        <p>remote add - Adds a remote Repository to the Git project <br>
+         origin - This is the name of the remote Repository <br>
+        URL - Is the URL of the remote Repository on GitHub</p>
+
+        <code>git push</code>
+        <p>Allows to push (i.e. upload) the content of the local Repository to the remote one.</p>
+
+        <code>git push -u origin master</code>
+        <p>Instructs Git to create an upstream to a specific Branch and Repository.</p>
+
+        <code>git remote</code>
+        <p>Displays the remote Repository in the terminal.</p>
+
+        <code>git  branch</code>
+        <p>Displays all current Branches in the local Repository.</p>
+
+        <code>git branch -r</code>
+        <p>Displays the remote tracking Branch.</p>
+
+        <code>git fetch</code>
+        <p>Downloads information from a remote Repository to the remote tracking Branch.</p>
+        
+        <code>git pull</code>
+        <p>Basically a combination of git fetch and git merge.</p>
+    </div>
+</body>
+</html>
